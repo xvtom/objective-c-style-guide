@@ -380,13 +380,15 @@ static CGFloat const RWTImageThumbnailHeight = 50.0;
 
 When using `enum`s, it is recommended to use the new fixed underlying type specification because it has stronger type checking and code completion. The SDK now includes a macro to facilitate and encourage use of fixed underlying types: `NS_ENUM()`
 
+The enum name should be subset of the fullname.
+
 **For Example:**
 
 ```objc
 typedef NS_ENUM(NSInteger, RWTLeftMenuTopItemType) {
-  RWTLeftMenuTopItemMain,
-  RWTLeftMenuTopItemShows,
-  RWTLeftMenuTopItemSchedule
+  RWTLeftMenuTopItemTypeMain,
+  RWTLeftMenuTopItemTypeShows,
+  RWTLeftMenuTopItemTypeSchedule
 };
 ```
 
