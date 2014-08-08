@@ -50,9 +50,9 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Error handling](#error-handling)
 * [Singletons](#singletons)
 * [Line Breaks](#line-breaks)
+* [Don't Cast to BOOL](#dont-cast-to-bool)
 * [Smiley Face](#smiley-face)
 * [Xcode Project](#xcode-project)
-
 
 ## Language
 
@@ -703,6 +703,22 @@ self.productsRequest = [[SKProductsRequest alloc]
   initWithProductIdentifiers:productIdentifiers];
 ```
 
+## Don't Cast to BOOL
+
+```
+// protect against this kind of bug:
+
+int aaa = 8192;
+BOOL bbb = aaa;
+printf("aaa = %d\n", aaa);
+printf("bbb = %d\n", bbb);
+
+/**
+ * Output:
+ * aaa = 8192
+ * bbb = 0
+ */
+```
 
 ## Smiley Face
 
