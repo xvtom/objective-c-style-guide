@@ -51,7 +51,7 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Singletons](#singletons)
 * [Line Breaks](#line-breaks)
 * [Don't Cast to BOOL](#dont-cast-to-bool)
-* [Should IBOutlet be strong or weak?](#should-iboutlet-strong-or-weak)
+* [Should IBOutlet be strong or weak?](#should-iboutlet-be-strong-or-weak)
 * [Smiley Face](#smiley-face)
 * [Xcode Project](#xcode-project)
 
