@@ -51,6 +51,7 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Singletons](#singletons)
 * [Line Breaks](#line-breaks)
 * [Don't Cast to BOOL](#dont-cast-to-bool)
+* [Should IBOutlet be strong or weak?](#should-iboutlet-strong-or-weak)
 * [Smiley Face](#smiley-face)
 * [Xcode Project](#xcode-project)
 
@@ -728,6 +729,13 @@ printf("bbb = %d\n", bbb);
     return someVar;
 }
 ```
+
+## Should IBOutlet be strong or weak?
+https://stackoverflow.com/questions/7678469/should-iboutlets-be-strong-or-weak-under-arc
+
+> The current recommended best practice from Apple is for IBOutlets to be strong unless weak is specifically needed to avoid a retain cycle. As Johannes mentioned above, this was commented on in the "Implementing UI Designs in Interface Builder" session from WWDC 2015 where an Apple Engineer said:
+>
+> And the last option I want to point out is the storage type, which can either be strong or weak. In general you should make your outlet strong, especially if you are connecting an outlet to a subview or to a constraint that's not always going to be retained by the view hierarchy. The only time you really need to make an outlet weak is if you have a custom view that references something back up the view hierarchy and in general that's not recommended.
 
 ## Smiley Face
 
