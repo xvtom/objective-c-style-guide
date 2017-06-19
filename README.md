@@ -1,6 +1,6 @@
-# The official Express VPN Objective-C style guide.
+# The official ExpressVPN Objective-C style guide.
 
-This style guide outlines the coding conventions for Express VPN team.
+This style guide outlines the coding conventions for ExpressVPN Mac/iOS dev team.
 
 ## Introduction
 
